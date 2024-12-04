@@ -68,7 +68,7 @@ module "gha_runners" {
   for_each = local.enabled ? local.enabled_runners : {}
 
   source  = "cloudposse/helm-release/aws"
-  version = "0.10.0"
+  version = "0.10.1"
 
   name            = each.key
   chart           = coalesce(var.charts["runner_sets"].chart, local.runner_chart_name)
