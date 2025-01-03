@@ -207,12 +207,12 @@ This component supports using AWS SSM to store and retrieve secrets. SSM paramet
 deploy to multiple regions you have 2 choices:
 
 1. Create the secrets in each region. This is the most robust approach, but requires you to create the secrets in each
-   region and keep them in sync.
+  region and keep them in sync.
 2. Create the secrets in one region and use the `ssm_region` input to specify the region where they are stored. This is
-   the easiest approach, but does add some obstacles to managing deployments during a region outage. If the region where
-   the secrets are stored goes down, there will be no impact on runners in other regions, but you will not be able to
-   deploy new runners or modify existing runners until the SSM region is restored or until you set up SSM parameters in
-   a new region.
+  the easiest approach, but does add some obstacles to managing deployments during a region outage. If the region where
+  the secrets are stored goes down, there will be no impact on runners in other regions, but you will not be able to
+  deploy new runners or modify existing runners until the SSM region is restored or until you set up SSM parameters in
+  a new region.
 
 Alternatively, you can create Kubernetes secrets outside of this component (perhaps using
 [SOPS](https://github.com/getsops/sops)) and reference them by name. We describe here how to save the secrets to SSM,
