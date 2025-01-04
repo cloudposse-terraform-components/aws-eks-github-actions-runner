@@ -5,5 +5,3 @@ repository:
   description: 'This component deploys self-hosted GitHub Actions Runners and a Controller on an EKS cluster, using "runner scale sets"'
   homepage: https://cloudposse.com/accelerate
   topics: terraform, terraform-component
-
-
