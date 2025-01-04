@@ -94,7 +94,7 @@ resource "kubernetes_secret_v1" "controller_ns_github_secret" {
 
 module "gha_runner_controller" {
   source  = "cloudposse/helm-release/aws"
-  version = "0.10.0"
+  version = "0.10.1"
 
   chart           = coalesce(var.charts["controller"].chart, local.controller_chart_name)
   repository      = var.charts["controller"].chart_repository
