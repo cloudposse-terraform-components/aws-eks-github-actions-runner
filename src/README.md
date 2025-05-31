@@ -381,7 +381,7 @@ implementation.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_eks"></a> [eks](#module\_eks) | cloudposse/stack-config/yaml//modules/remote-state | 1.5.0 |
+| <a name="module_eks"></a> [eks](#module\_eks) | cloudposse/stack-config/yaml//modules/remote-state | 1.8.0 |
 | <a name="module_gha_runner_controller"></a> [gha\_runner\_controller](#module\_gha\_runner\_controller) | cloudposse/helm-release/aws | 0.10.1 |
 | <a name="module_gha_runners"></a> [gha\_runners](#module\_gha\_runners) | cloudposse/helm-release/aws | 0.10.1 |
 | <a name="module_iam_roles"></a> [iam\_roles](#module\_iam\_roles) | ../../account-map/modules/iam-roles | n/a |
