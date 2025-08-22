@@ -93,8 +93,7 @@ description: |-
   Beware that using a PVC may significantly increase the startup of the runner. If you are using a PVC, you may want to
   keep idle runners available so that jobs can be started without waiting for a new runner to start.
 
-  ## Usage
-
+usage: |-
   **Stack Level**: Regional
 
   Once the catalog file is created, the file can be imported as follows.
@@ -356,15 +355,25 @@ description: |-
   <!-- prettier-ignore-start -->
   <!-- prettier-ignore-end -->
 
-  ## References
-
-  - [cloudposse/terraform-aws-components](https://github.com/cloudposse/terraform-aws-components/tree/main/modules/eks/actions-runner-controller) -
-    Cloud Posse's upstream component
-  - [alb-controller](https://artifacthub.io/packages/helm/aws/aws-load-balancer-controller) - Helm Chart
-  - [alb-controller](https://github.com/kubernetes-sigs/aws-load-balancer-controller) - AWS Load Balancer Controller
-  - [actions-runner-controller Webhook Driven Scaling](https://github.com/actions-runner-controller/actions-runner-controller/blob/master/docs/detailed-docs.md#webhook-driven-scaling)
-  - [actions-runner-controller Chart Values](https://github.com/actions-runner-controller/actions-runner-controller/blob/master/charts/actions-runner-controller/values.yaml)
-  - [How to set service account for workers spawned in Kubernetes mode](https://github.com/actions/actions-runner-controller/issues/2992#issuecomment-1764855221)
+references:
+  - name: cloudposse-terraform-components
+    url: https://github.com/orgs/cloudposse-terraform-components/repositories
+    description: Cloud Posse's upstream component
+  - name: alb-controller
+    url: https://artifacthub.io/packages/helm/aws/aws-load-balancer-controller
+    description: Helm Chart
+  - name: alb-controller
+    url: https://github.com/kubernetes-sigs/aws-load-balancer-controller
+    description: AWS Load Balancer Controller
+  - name: actions-runner-controller Webhook Driven Scaling
+    url: https://github.com/actions-runner-controller/actions-runner-controller/blob/master/docs/detailed-docs.md#webhook-driven-scaling
+    description:
+  - name: actions-runner-controller Chart Values
+    url: https://github.com/actions-runner-controller/actions-runner-controller/blob/master/charts/actions-runner-controller/values.yaml
+    description:
+  - name: How to set service account for workers spawned in Kubernetes mode
+    url: https://github.com/actions/actions-runner-controller/issues/2992#issuecomment-1764855221
+    description:
 tags:
   - component/eks/github-actions-runner
   - layer/github
