@@ -97,7 +97,6 @@ Leave `ephemeral_pvc_storage` at the default value of `null` to use `emptyDir` s
 
 Beware that using a PVC may significantly increase the startup of the runner. If you are using a PVC, you may want to
 keep idle runners available so that jobs can be started without waiting for a new runner to start.
-
 ## Usage
 
 **Stack Level**: Regional
@@ -361,16 +360,6 @@ implementation.
 <!-- prettier-ignore-start -->
 <!-- prettier-ignore-end -->
 
-## References
-
-- [cloudposse/terraform-aws-components](https://github.com/cloudposse/terraform-aws-components/tree/main/modules/eks/actions-runner-controller) -
-  Cloud Posse's upstream component
-- [alb-controller](https://artifacthub.io/packages/helm/aws/aws-load-balancer-controller) - Helm Chart
-- [alb-controller](https://github.com/kubernetes-sigs/aws-load-balancer-controller) - AWS Load Balancer Controller
-- [actions-runner-controller Webhook Driven Scaling](https://github.com/actions-runner-controller/actions-runner-controller/blob/master/docs/detailed-docs.md#webhook-driven-scaling)
-- [actions-runner-controller Chart Values](https://github.com/actions-runner-controller/actions-runner-controller/blob/master/charts/actions-runner-controller/values.yaml)
-- [How to set service account for workers spawned in Kubernetes mode](https://github.com/actions/actions-runner-controller/issues/2992#issuecomment-1764855221)
-
 
 <!-- markdownlint-disable -->
 ## Requirements
@@ -476,6 +465,18 @@ implementation.
 
 ## References
 
+
+- [cloudposse-terraform-components](https://github.com/orgs/cloudposse-terraform-components/repositories) - Cloud Posse's upstream component
+
+- [alb-controller](https://artifacthub.io/packages/helm/aws/aws-load-balancer-controller) - Helm Chart
+
+- [alb-controller](https://github.com/kubernetes-sigs/aws-load-balancer-controller) - AWS Load Balancer Controller
+
+- [actions-runner-controller Webhook Driven Scaling](https://github.com/actions-runner-controller/actions-runner-controller/blob/master/docs/detailed-docs.md#webhook-driven-scaling) - %!s(<nil>)
+
+- [actions-runner-controller Chart Values](https://github.com/actions-runner-controller/actions-runner-controller/blob/master/charts/actions-runner-controller/values.yaml) - %!s(<nil>)
+
+- [How to set service account for workers spawned in Kubernetes mode](https://github.com/actions/actions-runner-controller/issues/2992#issuecomment-1764855221) - %!s(<nil>)
 
 
 
